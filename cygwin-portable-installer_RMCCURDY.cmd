@@ -672,6 +672,8 @@ if "%INSTALL_BASH_FUNK%" == "yes" (
         (
             echo.
             echo source /opt/bash-funk/bash-funk.sh
+            #added for find -exec bug 
+            -update -yr
         ) >>"%Bashrc_sh%" || goto :fail
     )
 )
